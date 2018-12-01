@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* imported font families are usable through font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif; */
+body{
+    
+   
+}
+nav { 
+    /* display flex enables movement of nav bar */
+    margin: 0px;
+    padding: 30px; /* increase size of nav box */
+    border-bottom: solid 1px rgba(240, 128, 128, 1);
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly; 
+    
+    
+}
+ul { 
+    /* removes bullet points from list element */
+    list-style-type: none;
+   /* if border is wanted below only list element border-bottom: solid 1px rgba(240, 128, 128, 1); */
+}
+
+/* inline flex attempts over inline-block */
+li { 
+    height: 25px;
+    margin-right: 0px;
+    border-right: 1px solid #aaa;
+    padding: 0 60px;
+   /* must be inline-flex to get on same line */
+    display: inline-flex; 
+   
+}
+li:last-child {
+    border-right: none;
+}
+li a { 
+    /* decoration removes underline from hyperlinks, section also sets colour and text for nav elements*/
+    color: rgba(187, 184, 184, 0.986);
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+}
+li a:hover {
+    /* changes colour of hovering text to a darker tone, transition slows process. */
+    color: rgb(83, 81, 81);
+    transform: scale(1.3);
+    /* scale increase text size on hover by a factor of 1.3 thanks to https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale */
+    transition: all 0.5s ease;
+}
+li.current a { 
+    /* shows which page is currently open by bolding text and changing text colour */
+    font-weight: bold;
+    color: #000000;
+}
+p { 
+    /* currently to test goggle fonts and margins*/
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    padding-left: 70px;
+    display: flex;
+    
+}
