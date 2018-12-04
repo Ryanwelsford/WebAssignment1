@@ -16,6 +16,7 @@ nav {
     text-align: center;
     display: flex;
     justify-content: space-evenly; 
+    height: 1.25em;
     
     
 }
