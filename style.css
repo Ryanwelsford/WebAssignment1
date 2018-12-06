@@ -12,18 +12,18 @@ nav {
     /* display flex enables movement of nav bar */
     margin: 0px;
     padding: 30px; /* increase size of nav box */
-    border-bottom: solid 1px rgba(240, 128, 128, 1);
-    text-align: center;
     display: flex;
     justify-content: space-evenly; 
     height: 1.25em;
-    
-    
 }
 ul { 
     /* removes bullet points from list element */
     list-style-type: none;
-   /* if border is wanted below only list element border-bottom: solid 1px rgba(240, 128, 128, 1); */
+    display: flex;
+    flex-direction: row;
+   
+    
+  
 }
 
 /* inline flex attempts over inline-block */
@@ -31,9 +31,10 @@ li {
     height: 25px;
     margin-right: 0px;
     border-right: 1px solid #aaa;
-    padding: 0 60px;
-   /* must be inline-flex to get on same line */
-    display: inline-flex; 
+    padding: 5px 60px;
+    border-bottom: solid 1px rgba(240, 128, 128, 1);
+    /* border bottom - border only under enter items not entire nav element */
+    
    
 }
 li:last-child {
@@ -43,7 +44,7 @@ li a {
     /* decoration removes underline from hyperlinks, section also sets colour and text for nav elements*/
     color: rgba(187, 184, 184, 0.986);
     text-decoration: none;
-    font-size: 25px;
+    font-size: 1.5em;
     font-family: 'Playfair Display', serif;
     text-transform: uppercase;
 }
@@ -59,11 +60,30 @@ li.current a {
     font-weight: bold;
     color: #000000;
 }
-p { 
-    /* currently to test goggle fonts and margins*/
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 10px;
-    padding-left: 70px;
+.indexh2{
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-right: solid rgba(187, 184, 184, 0.986);
+}
+.containerindex1 { 
+    border-bottom: solid 1px rgba(240, 128, 128, 1);
+    /* enables column layout in webpage*/
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     
+}
+.containerindex1 p {
+    /* currently to test goggle fonts and margins*/
+    border-right: solid rgba(187, 184, 184, 0.986);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    margin:0 1.2em;
+    padding-right: 1em;
+    width: 20em;
+}
+p:last-child {
+    border-right:none;
 }
