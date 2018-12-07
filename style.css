@@ -15,24 +15,23 @@ nav {
     display: flex;
     justify-content: space-evenly; 
     height: 1.25em;
+    
+    
 }
-ul { 
+nav ul { 
     /* removes bullet points from list element */
     list-style-type: none;
-    display: flex;
-    flex-direction: row;
-   
-    
-  
+    border-bottom: solid 1px rgba(240, 128, 128, 1);
+    padding-bottom: 35px;
 }
-
 /* inline flex attempts over inline-block */
-li { 
+nav li { 
     height: 25px;
-    margin-right: 0px;
     border-right: 1px solid #aaa;
     padding: 5px 60px;
-    border-bottom: solid 1px rgba(240, 128, 128, 1);
+    
+    display: inline-flex;
+    /* if flex-direction used instead of inline-flex transition no longer works?*/
     /* border bottom - border only under enter items not entire nav element */
     
    
@@ -50,10 +49,11 @@ li a {
 }
 li a:hover {
     /* changes colour of hovering text to a darker tone, transition slows process. */
+    transform: scale(1.2);
     color: rgb(83, 81, 81);
-    transform: scale(1.3);
+    transition: all 0.5s ease-in-out;
     /* scale increase text size on hover by a factor of 1.3 thanks to https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale */
-    transition: all 0.5s ease;
+    
 }
 li.current a { 
     /* shows which page is currently open by bolding text and changing text colour */
@@ -64,10 +64,10 @@ li.current a {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    border-right: solid rgba(187, 184, 184, 0.986);
+    border-right: solid 1px rgba(187, 184, 184, 0.986);
 }
 .containerindex1 { 
-    border-bottom: solid 1px rgba(240, 128, 128, 1);
+    
     /* enables column layout in webpage*/
     margin-top: 10px;
     display: flex;
@@ -75,9 +75,10 @@ li.current a {
     justify-content: center;
     
 }
+
 .containerindex1 p {
     /* currently to test goggle fonts and margins*/
-    border-right: solid rgba(187, 184, 184, 0.986);
+    border-right: solid 1px rgba(187, 184, 184, 0.986);
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
     margin:0 1.2em;
@@ -86,4 +87,13 @@ li.current a {
 }
 p:last-child {
     border-right:none;
+}
+footer {
+    margin: 10px 7em;
+    display: flex;
+    justify-content: flex-end;
+    border-top: solid 1px rgba(240, 128, 128, 1);
+}
+footer ul {
+    list-style-type: none;
 }
