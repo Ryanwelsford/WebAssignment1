@@ -32,7 +32,7 @@ nav li {
     
     display: inline-flex;
     /* if flex-direction used instead of inline-flex transition no longer works?*/
-    /* border bottom - border only under enter items not entire nav element */
+    /* border bottom - border only under each item not entire nav element */
     
    
 }
@@ -90,10 +90,15 @@ p:last-child {
 }
 footer {
     margin: 10px 7em;
+    border-top: solid 1px rgba(240, 128, 128, 1);
     display: flex;
     justify-content: flex-end;
-    border-top: solid 1px rgba(240, 128, 128, 1);
+}
+footer img { /* doesnt work yet */
+    display:flex;
+    align-self: flex-start;
 }
 footer ul {
+    margin-top: 1em;
     list-style-type: none;
 }
