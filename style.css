@@ -92,13 +92,12 @@ footer {
     margin: 10px 7em;
     border-top: solid 1px rgba(240, 128, 128, 1);
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
 }
-footer img { /* doesnt work yet */
-    display:flex;
-    align-self: flex-start;
-}
+
 footer ul {
-    margin-top: 1em;
+    margin-top: 3em;
     list-style-type: none;
+    order:1;
 }
