@@ -39,27 +39,29 @@ nav li {
 li:last-child {
     border-right: none;
 }
-li a { 
+nav li a { 
     /* decoration removes underline from hyperlinks, section also sets colour and text for nav elements*/
     color: rgba(187, 184, 184, 0.986);
     text-decoration: none;
     font-size: 1.5em;
     font-family: 'Playfair Display', serif;
     text-transform: uppercase;
+    
 }
 li a:hover {
     /* changes colour of hovering text to a darker tone, transition slows process. */
     transform: scale(1.2);
     color: rgb(83, 81, 81);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease;
     /* scale increase text size on hover by a factor of 1.3 thanks to https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale */
-    
 }
+
 li.current a { 
     /* shows which page is currently open by bolding text and changing text colour */
     font-weight: bold;
     color: #000000;
 }
+
 .indexh2{
     display: flex;
     flex-direction: column;
