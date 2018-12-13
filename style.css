@@ -128,3 +128,33 @@ footer li a {
     color: #000;
     /* removes hyperlink decoration from anchor tags */
 }
+/* mobile pixel width-max = 480px min = 320  */
+/* needs work!!!! */
+@media (max-width:480px){
+    .containerindex1, header, footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        border: 0px;
+        border: red solid 2px; 
+    }
+    nav li {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; 
+        border: 0px;
+        font-size: 0.8em;
+        
+        
+    }
+    header { 
+        margin-top: 125px;
+        font-size: 1em;
+        border: red solid 2px; 
+    }
+    .article1, .article2, .article3, {
+        border-right: solid 1px rgba(187, 184, 184, 0.986);
+    }
+}
+/* tablet pixels width-max = 1024 min = 768 */
