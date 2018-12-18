@@ -16,6 +16,7 @@ nav {
     display: flex;
     justify-content: space-evenly; 
     height: 1.25em; 
+    
 }
 
 nav ul { 
@@ -82,13 +83,18 @@ li.current a {
 }
 /* general article styling */
 Article {
-    border-right: solid 1px rgba(187, 184, 184, 0.986);
+   /* border-right: solid 1px rgba(187, 184, 184, 0.986); */
     margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    width: 20em;
     
 }
-article:last-child {
-    border-right:none;
-    /* prevents border section on final element in content area */
+
+
+/* images section */
+article img {
+    width: 19em;
 }
 /* headlines / h1,2,3 section area */
 h3 {
@@ -97,6 +103,7 @@ h3 {
     font-size: 1.5em;
     border-bottom: solid 1px rgba(240, 128, 128, 1);
     margin-right: 100px;
+    margin-bottom: 5px;
     /* sets border length shorter than full element */
 }
 
@@ -123,38 +130,74 @@ footer ul {
     list-style-type: none;
     order:1;
 }
+
 footer li a {
     text-decoration: none;
     color: #000;
     /* removes hyperlink decoration from anchor tags */
 }
+
 /* mobile pixel width-max = 480px min = 320  */
-/* needs work!!!! */
 @media (max-width:480px){
+    
     .containerindex1, header, footer {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
-        border: 0px;
-        border: red solid 2px; 
+        
+        
     }
+
     nav li {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap; 
         border: 0px;
         font-size: 0.8em;
-        
-        
     }
+
+    nav ul {
+        border: 0px;
+    }
+
     header { 
-        margin-top: 125px;
+        margin: 150px 10px 0px 10px;
+        padding-bottom: 5px;
         font-size: 1em;
-        border: red solid 2px; 
+        border-bottom: solid 1px rgba(240, 128, 128, 1);
     }
-    .article1, .article2, .article3, {
-        border-right: solid 1px rgba(187, 184, 184, 0.986);
+
+    article{ 
+        width: 20em;
+        margin-top: 2em;
+        border-bottom: dotted 1px #000;
+        padding-bottom: 1em;
+    }
+
+    li.current a {
+        border-bottom: solid 1px rgba(240, 128, 128, 1);
     }
 }
 /* tablet pixels width-max = 1024 min = 768 */
+/* in progress */
+/* @media (min-width: 481px) and (max-width: 1024px){
+    .containerindex1{
+        flex-wrap: wrap;
+    }
+    article {
+        width: 15em;
+} */
+
+
+/* fix for article borders geting mashed with media queryies */
+@media (min-width: 1025px){
+    Article {
+        border-right: solid 1px rgba(187, 184, 184, 0.986);
+    }
+
+    article:last-child {
+        border-right:none;
+    /* prevents border section on final element in content area */
+    }
+}
