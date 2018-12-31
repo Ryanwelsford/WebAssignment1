@@ -195,6 +195,18 @@ footer li a {
         border-bottom: solid 1px rgba(240, 128, 128, 1);
     }
 }
+/* header fixes for reduced screen size */
+@media (min-width: 481px) and (max-width: 720px){
+    header {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 721px) and (max-width: 1024px){
+    header { 
+        font-size: 2em;
+    }
+}
 /* tablet pixels width-max = 1024 min = 768 */
 /* in progress */
 /* @media (min-width: 481px) and (max-width: 1024px){
