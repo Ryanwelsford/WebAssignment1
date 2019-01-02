@@ -177,7 +177,7 @@ footer li a {
     header { 
         margin: 150px 10px 0px 10px;
         padding-bottom: 5px;
-        font-size: 1em;
+        font-size: 0.8em;
         border-bottom: solid 1px rgba(240, 128, 128, 1);
     }
 
@@ -201,15 +201,28 @@ footer li a {
     }
 }
 /* header fixes for reduced screen size */
+/* bigger than mobile / small tablet */
 @media (min-width: 481px) and (max-width: 720px){
     header {
         font-size: 1.5em;
     }
+    nav li a {
+        font-size: 0.9em;
+    }
+    nav li {
+        padding: 0px 5px;
+    }
 }
-
+/* tablet but smaller than desktop */
 @media (min-width: 721px) and (max-width: 1024px){
     header { 
         font-size: 2em;
+    }
+    nav li a {
+        font-size: 1.3em;
+    }
+    nav li {
+        padding: 0px 15px;
     }
 }
 /* tablet pixels width-max = 1024 min = 768 */
