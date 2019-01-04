@@ -4,9 +4,7 @@
 }
 /* imported font families are usable through font-family: 'Montserrat', sans-serif;
 font-family: 'Playfair Display', serif; */
-body{
-   
-}
+
 /* ultimate debuggin tool border: red solid 2px; */
 /* nav section */
 nav { 
@@ -87,9 +85,9 @@ article p {
 }
 
 /* index */
-.containerindex1 p {
 
-}
+
+
 /* jobs */
 .containerjobs1 article {
     width: 450px;
