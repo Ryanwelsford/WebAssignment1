@@ -54,7 +54,7 @@ li a:hover {
     transform: scale(1.2);
     color: rgb(150, 81, 81);
     transition: all 0.5s ease;
-    /* scale increase text size on hover by a factor of 1.3 thanks to https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale */
+    /* scale increase text size on hover by a factor of 1.2 thanks to https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale */
 }
 
 li.current a { 
@@ -66,7 +66,7 @@ li.current a {
 
 /* container area */
 .containerindex1, .containerjobs1 { 
-    /* container index 1 is container for entire content area */
+    /* container index 1 is container for entire content area, container jobs 1 is for dual column pages, jobs and tutorials, enables different widths, could just set different classes in future */
     margin-top: 10px;
     display: flex;
     flex-direction: row;
@@ -94,8 +94,9 @@ li.current a {
 /* styles jobs page more inline with landing/ review pages */
 .containerjobs1 li {
     margin: 0px 20px;
-    /* moves li elements more inline with text, bullet points too close to border from articles to the left */
+/* moves li elements more inline with text, bullet points too close to border from articles to the left */
 }
+/* tutorial section or use jobs containers ? */
 
 /* general article styling */
 Article {
@@ -112,6 +113,8 @@ Article {
 article img {
     width: 19em;
 }
+/* images that span articles /*
+
 /* headlines / h1,2,3 section area */
 h3 {
     font-family: 'Playfair Display', serif;
@@ -119,7 +122,7 @@ h3 {
     border-bottom: solid 1px rgba(240, 128, 128, 1);
     margin-right: 100px;
     margin-bottom: 5px;
-    /* sets border length shorter than full element */
+    /* sets border length longer than full text element */
 }
 
 /* header section */
@@ -139,11 +142,12 @@ footer {
     justify-content: space-between;
     padding: 0 60px;
 }
-
+/* removes bullet points from social links */
 footer ul {
     margin-top: 3em;
     list-style-type: none;
     order:1;
+    /* pretty sure order is redundant code due to other fixes */
 }
 
 footer li a {
@@ -153,6 +157,7 @@ footer li a {
 }
 
 /* mobile pixel width-max = 480px min = 320  */
+/* mobile mode */
 @media (max-width:480px){
     
     .containerindex1, .containerjobs1, header, footer {
@@ -185,22 +190,36 @@ footer li a {
         width: 20em;
         margin-top: 2em;
         border-bottom: dotted 1px #000;
+        /* helps differentiate between articles in mobile mode */
         padding-bottom: 1em;
         
     }
+    /* added for glossary page to help seperate terms */
+    .ArticleG p {
+        border-bottom: dotted 1px #000;
+        padding-bottom: 10px;
+        margin-bottom: 25px;
+    }
+    /* removes double dotted border between seperate articles in glossary page */
+    .ArticleG p:last-child {
+        border-bottom: none;
+    }
+
     article img {
         align-items: center;
         margin: 5px 0px;
     }
+
     li.current a {
         border-bottom: solid 1px rgba(240, 128, 128, 1);
     }
+
     .containerjobs1 article {
         margin: 0px 5px;
         width: 20em;
     }
 }
-/* header fixes for reduced screen size */
+
 /* bigger than mobile / small tablet */
 @media (min-width: 481px) and (max-width: 720px){
     header {
@@ -212,6 +231,18 @@ footer li a {
     nav li {
         padding: 0px 5px;
     }
+    article img {
+        width: 12em;
+    }
+    article {
+        width: 12em;
+        font-size: 0.7em;
+    }
+    footer { 
+        flex-direction: column;
+        align-items: center;
+    }
+    
 }
 /* tablet but smaller than desktop */
 @media (min-width: 721px) and (max-width: 1024px){
@@ -224,26 +255,38 @@ footer li a {
     nav li {
         padding: 0px 15px;
     }
-}
-/* tablet pixels width-max = 1024 min = 768 */
-/* in progress */
-/* @media (min-width: 481px) and (max-width: 1024px){
-    .containerindex1{
-        flex-wrap: wrap;
+    article img {
+        width: 15em;
     }
     article {
         width: 15em;
-} */
+        font-size: 0.9em;
+    }
+    
+}
 
-
-/* fix for article borders geting mashed with media queryies */
-@media (min-width: 1025px){
+/* fix for article borders geting mashed with media queries */
+@media (min-width: 481px){
     Article {
         border-right: solid 1px rgba(187, 184, 184, 0.986);
+        padding-right: 5px;
     }
 
     article:last-child {
         border-right:none;
+    }
+
     /* prevents border section on final element in content area */
+    }
+    /* header and Nav fixes at start of reduced screen size, creates smoother transition*/
+@media (min-width: 1025px) and (max-width: 1265px){
+    header { 
+        font-size: 2.5em;
+    }
+    nav li a {
+        font-size: 1.5em;
+    }
+    nav li {
+        padding: 0px 30px;
     }
 }
