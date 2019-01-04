@@ -2,9 +2,11 @@
 <html>
     <head>
         <title>Tutorials</title>
-        <link rel="stylesheet" href="style.css" href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display">
+        <link rel="stylesheet" href="style.css"> 
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width", inital-scale=1">
+        <meta name="viewport" content="width=device-width" inital-scale="1">
         <link rel="shortcut icon" href="images/Newsfire_48x48.ico" type='image/x-icon'>
         <!--https://icons8.com/iconizer/en/search/1/collection:Newsfire favicon image source-->
     </head>
@@ -26,24 +28,38 @@
             <section class="containerjobs1">
                 
                 <Article class="Article4">
-                    <img class="indexphoto3" src="images/index/Photo by Tim Gouw on Unsplash.jpg">
-                    <h3>Just Can't Find the Answer?</h3>
+                    <h3>Overview This Week</h3>
                     <p>
-                    Check out our <a href="glossary.html">Glossary</a> pages for details for helpful web development terms! Terms are changed on a weekly basis so check back with us every monday for more terms you need to know! this week a special on meta tags and media queries for the developer looking into responsive design. Not what your looking for? Maybe the <a href="tutorials.html">Tutorials</a> are what you need! With more media queries for those looking for a detailed guide.
+                        Welcome to Rw Designs latest tutorials article this week we have a YouTube tutorial from <a href="https://www.youtube.com/user/QuentinWatt">Quentin Watt Tutorials</a>. This will take us through the basics for media queries today and how we can use this information to create responsive websites. Ultimately the goal would be to have a website that functions on many different platforms, the ones included on site today are;  
+                    </p>
+                    <ol>
+                        <li>Mobile</li>
+                        <li>Small Tablet</li>
+                        <li>Bigger Tablets</li>
+                        <li>Desktops</li>
+                    </ol>
+                    <img class="indexphoto3" src="images/index/Photo by Tim Gouw on Unsplash.jpg">
+                    <p>
+                        For those struggling still with flexbox from last week remember to check out <a href="https://flexboxfroggy.com/">flexbox froggy</a> again for a quick reference point. Or check out <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">css-tricks</a> website for a more detailed over view before getting started with your media queries this week.
                     </p>
                 </Article>
 
                 <Article class="Article4">
-                    <h3>Want A New Job? Just Looking Around?</h3>
+                    <h3>Media Queries</h3>
+                    <iframe src="https://www.youtube.com/embed/fA1NW-T1QXc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen alt="Sorry your browser isnt compatible please follow this link https://www.youtube.com/watch?v=fA1NW-T1QXc&feature=youtu.be" > </iframe>
+                    <!--Copied from youtube embed share, video tag doesnt work with youtube url apparently https://www.youtube.com/watch?v=fA1NW-T1QXc&feature=youtu.be-->
                     <p>
-                        Visit the <a href="jobs.html">Jobs</a> page for the lastest in web dev jobs!. We look in detail at two new jobs this week for those avid web devs in the Northamptonshire area.
-                        <img src="images/index/Photo by rawpixel on Unsplash.jpg">
-                        Not what you were looking for this week? Send us your suggestions for the coming weeks through our social media links below! </p>  
+                        This video has taken us through the basics for us to start using media queries, the best way I have found to think about them is to think of them like IF statements. Essentially what the query says is what to do when the pixel size of the viewport is x size. Sounds like an IF statement to me at least. </p>  
+                    <img src="images/index/Photo by rawpixel on Unsplash.jpg">    
+                    <p>
+                        For instance, setting max-width: 480px; is saying when the screen is less than 480px do this. As an example, on this site if you reduce the screen size to 480px quite a lot happens, it moves into a mobile friendly format that changes the flex direction from row, allowing us to stack articles next to each other, to column stacking them on top of each other.
+                    </p>
+                    
                 </Article>
             </section>
             <footer>
                 <picture>
-                    <img class="logo" src="images/RwDesigns150.jpg">
+                    <img class="logo" src="images/RwDesigns150.jpg" alt="Rw Designs Logo">
                 </picture>
                 <ul>
                     <li>Find us on Social media</li>
