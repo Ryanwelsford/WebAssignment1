@@ -94,7 +94,11 @@ li.current a {
 /* styles jobs page more inline with landing/ review pages */
 .containerjobs1 li {
     margin: 0px 20px;
+    list-style-type: lower-roman;
 /* moves li elements more inline with text, bullet points too close to border from articles to the left */
+}
+#Wavy {
+    text-decoration: wavy underline rgb(21, 245, 21);
 }
 /* tutorial section or use jobs containers ? */
 
@@ -223,7 +227,7 @@ footer li a {
 /* bigger than mobile / small tablet */
 @media (min-width: 481px) and (max-width: 720px){
     header {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
     nav li a {
         font-size: 0.9em;
@@ -247,7 +251,7 @@ footer li a {
 /* tablet but smaller than desktop */
 @media (min-width: 721px) and (max-width: 1024px){
     header { 
-        font-size: 2em;
+        font-size: 1.8em;
     }
     nav li a {
         font-size: 1.3em;
@@ -281,7 +285,7 @@ footer li a {
     /* header and Nav fixes at start of reduced screen size, creates smoother transition*/
 @media (min-width: 1025px) and (max-width: 1265px){
     header { 
-        font-size: 2.5em;
+        font-size: 2.3em;
     }
     nav li a {
         font-size: 1.5em;
