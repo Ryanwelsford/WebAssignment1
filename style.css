@@ -300,19 +300,24 @@ footer li {
     header { 
         font-size: 1.8em;
     }
+
     nav li a {
         font-size: 1.3em;
     }
+
     nav li {
         padding: 0px 15px;
     }
+
     article img {
         width: 15em;
     }
+
     article iframe {
         width: 17em;
         height: 15em;
     }
+
     article {
         width: 15em;
         font-size: 0.9em;
@@ -338,9 +343,11 @@ footer li {
     header { 
         font-size: 2.3em;
     }
+
     nav li a {
         font-size: 1.5em;
     }
+    
     nav li {
         padding: 0px 30px;
     }
