@@ -131,7 +131,8 @@ Article {
 article iframe {
     height: 15em;
     width: 25em;
-
+    border: #000 solid 1px;
+    /* border highlights edge of video better, fits still of page better */
 }
 /* images section */
 article img {
