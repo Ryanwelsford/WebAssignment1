@@ -21,47 +21,65 @@
                 <li><a href="tutorials.html">Tutorials</a></li>
             </ul>
         </nav>
+        <!-- fits in with index page reference comments on media special i.e glossary and reviews pages-->
         <header>
                 <h1>Glossary - Media Special</h1>
         </header>
             <!--Main content area-->
         <section class="containerindex1">
+            <!--ArticleG used as seperate container from other articles due to mobile mood, easier to distinguish between each seperate tag-->
             <Article class="ArticleG">
+                <!--Each article broken down into 3 paragraphs each with own h3 title tag-->
                 <h3>Meta tag</h3>
                 <p>
                     The meta tag enables you to declare various properties of your web page. Including the character set you are using, typically UTF-8, the default language of your web page and the ability to refresh your page after a certain number of seconds or enables redirection to a separate URL after a set time. Must be declared within the head tag!.</p>
 
+                <!-- viewport linked as unsure how else to descibe it, faily complicated if further reading required-->
                 <h3>Viewport</h3>
 
                 <p>
-                    “The browser's viewport is the area of the window in which web content can be seen. This is often not the same size as the rendered page, in which case the browser provides scrollbars for the user to scroll around and access all the content.”</p>  
+                    “The browser's viewport is the area of the window in which web content can be seen. This is often not the same size as the rendered page, in which case the browser provides scrollbars for the user to scroll around and access all the content.” </p>  
+                    <!-- creates border on mobile not perfect but looks fine, edits make larger versions look worse so will leave as on purpose-->
                 <p>
                     Courtesy of <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag">Mozilla</a> </p>
+                    <!--Mozilla linked for quoted text-->
 
                 <h3>Initial-scale</h3>
                 <p>
                     The initial-scale property controls the zoom level when the page is first loaded. Essentially controls how far away the page appears on first load, it can be set to different values depending on what type of device is loading the web page, i.e. mobile or desktop.</p>
             </Article>
 
+            <!-- start of column 2 area-->
             <Article class="ArticleG">
                 <h3>List-style-type</h3>
                 <p>
                     List-style-type enables you to remove bullet points from lists by setting its value to none. It can also be set to a variety of different options to give your lists a different look than standard, try setting to lower-roman for roman numerals, as you may have seen today already.</p>
+                    <!-- Fits in with index page media special etc-->
                 <h3>Media</h3>     
                 <p>
                     Used through the @media tag rather than standard tags, enables conditional rules of web pages based on the pixel size of the view window. In combination with setting max-width and min-width enables media queries on your web page! You can try setting different values for elements like your header, reducing the font size maybe, and watch as you shrink the page your header will shrink at the pixels sizes you set.</p>
+                    <!--Wavy used for styles pages shows off some CSS skills with transitons and the like-->
                 <h3 id="Wavy">Text-decoration</h3>
                 <p>
                     Text-decoration allows you to decorate your text in different ways, obvious right! The best use so far I have found is, it enables you to remove the blue highlight and underline from hyperlinks for things like your social media links in your footers! You can also do fun things like set a green wavy line under words.Hover over the heading!</p>
+                    <!-- hover heading so people can see the example maybe should bold that aspect?-->
             </Article>
 
+            <!-- starts article 3-->
             <Article class="ArticleG">
                 <h3>Favicon</h3>
+                <!--custom favicon added for just this reason, PNG file would allow to create transparent logo in the future, note to self-->
                 <p>
                     A favicon is the small icon/image on web pages tabs appearing next to the "title" element, typically used for small logos. Look at your tab for the Rw icon</p>
+
+                <!--ID used over class to override, issues were had previously with classes for just this reason?-->
+                <!--Spin added as example of transition rotates title 180 degrees-->
                 <h3 id="spin">Transform</h3>
                 <p>
                     Transform lets you change elements of your code through various means. The scale value allows you to change the size of an element by a certain factor, larger than one for increases in size and decimal values for decreasing size. You can even rotate objects in 3D using transform using the rotate3d value and inputting three values for dimensions and a final value for an angle, remember to separate your dimensions with commas! Hover over the heading!</p>
+                    <!--hover element present again, maybe bold these elements for ease of use-->
+
+                    <!--Change id heading grows text by scale and changes colour to a gold type-->
                 <h3 id="change">Transition</h3>
                 <p>
                     The transition property works with the transform property to allow you to adjust how your elements change. For instance, you can set a transform property to have a transition of 0.5 meaning that it will take 0.5 seconds for the change to fully complete. You can also set it to things like linear, which makes it change equal amounts over time. Try setting to step(3, end) your transition will jump through its transform over 3 distinct steps. Hover over the heading!</p>
@@ -76,8 +94,9 @@
                 <img class="logo" src="images/RwDesigns150.jpg" alt="Rw Designs Logo">
             </picture>
             
+            <!--Footer title added to bold heading of social and address on web page-->
             <ul class="social">
-                <li>Find us on Social media</li>
+                <li class="footertitle">Find us on Social media</li>
                 <!--images from iconfinder.com-->
                 <li><a href="https://twitter.com/RwDesignsUK"><img src="images/twittericon.png" alt="twitter icon">Twitter: @RwDesignsUK</a></li>
                 <!--https://www.iconfinder.com/icons/107170/circle_twitter_icon-->
@@ -87,13 +106,15 @@
                 <!--Insta not linked to rwdesigns account as doesnt like me making an account-->
                 <!--https://www.iconfinder.com/icons/107172/circle_instagram_icon-->
             </ul>
-            
+            <!--bugs become features, anchor tags when hovered change colour within footer, left as is looks good!-->
+
             <ul class="address">
-                <li>Business Address</li>
+                <li class="footertitle">Business Address</li>
                 <li>123 Waterpump Close</li>
                 <li>NN3 5NY</li>
                 <li>RwDesignsOfficial@gmail.com</li>
             </ul>
+            <!--added as usually a part of most web page footers in some way or another-->
 
         </footer>
 

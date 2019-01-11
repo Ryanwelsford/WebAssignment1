@@ -121,6 +121,7 @@ article #spin:hover {
 .ArticleG p {
     margin-bottom: 5px;
 }
+
 /* tutorial section or use jobs containers ? */
 
 /* general article styling */
@@ -186,6 +187,10 @@ footer ul {
     /* pretty sure order is redundant code due to other fixes */
     width: 15em;
     /* width prevents li elements from stacking in mobile and small tablet mode */
+}
+/* added to show difference between social links and title + buisness address and title */
+.footertitle {
+    font-weight: bold;
 }
 
 
@@ -340,6 +345,10 @@ footer li {
     article {
         width: 15em;
         font-size: 0.9em;
+    }
+    /* footer logo fix , was hovering over red border on some views */
+    footer { 
+        padding-top:5px;
     }
     
 }
